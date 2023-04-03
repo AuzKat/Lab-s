@@ -5,7 +5,8 @@ def lab61 ():
     print(city_dict ["Чехия"])
     for key in sorted(city_dict):
         print(key, " - ",city_dict[key])
-lab61()
+
+
 def lab62 ():
         erydit = {"а": 6,
                   "б": 3, "в": 1,
@@ -32,3 +33,18 @@ def lab62 ():
         print("Сумма: ", b)
 
 def lab63 ():
+    dt = {input(): input().split() for _ in range(int(input()))}  # сначала вводится студент, потом его предметы
+    sett = set()
+    for i in dt.values():
+        for j in i:
+            sett.add(j)
+    itog_dict = {}
+    for i in sorted(sett):
+        itog_dict[i] = []
+    for i in dt.items():
+        for j in list(i[1]):
+            if j in itog_dict:
+                itog_dict[j].append(list(i)[0])
+    print(itog_dict)
+    # print(dt)
+    print(*itog_dict['китайский'])
