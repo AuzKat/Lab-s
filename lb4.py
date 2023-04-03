@@ -30,3 +30,29 @@ def ticket(ticket: str):
         return True
     else:
         return False
+
+
+def lucky():
+    sum1 = sum([int(i) for i in ticket[:int(len(ticket) / 2)]])
+    sum2 = sum([int(i) for i in ticket[int(len(ticket) / 2):]])
+    if sum1 == sum2:
+        return True
+    else:
+        return False
+if __name__ == "__main__":
+    print("Проверка функции деления на три")
+    print(delenye_na_3(14))
+    print(delenye_na_3(15))
+
+    print("\nПроверка функции деления 100 на число")
+    print(delenye_100(10))
+    print(delenye_100(0))
+    print(delenye_100("s"))
+
+    print("\nПроверка функции магической даты")
+    print(magic_date("22.01.2022"))
+    print(magic_date("21.01.2022"))
+
+    print("\nПроверка функции счастливого билета")
+    print(lucky_ticket("385916"))
+    print(lucky_ticket("385916"))
