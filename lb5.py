@@ -42,5 +42,4 @@ def lb54():
  
  
 if name == "__main__": 
-   
-    spisok_stud()
+  
