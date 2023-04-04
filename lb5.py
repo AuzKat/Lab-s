@@ -22,5 +22,25 @@ def lb53():
     print('Work days:', week[:-weekends])
     print()
 
-
-
+def lb54():
+    n = ['danilov', 'ayzyak', 'belikova', 'ivshina', 'obryvalina', 'garaev', 'ivanov', 'prosvetov', 'svetov', 'dementyeva'] 
+    d = ['sidorov', 'petrov', 'vasechkin', 'chehov', 'mironovh', 'larin', 'sobolev', 'kazanskiy', 'shageev', 'medvedeva'] 
+    team = [] 
+    for index in range(5): 
+        team.append(n[index]) 
+        team.append(d[index]) 
+    team = tuple(team) 
+    print(n + d) 
+    print(team) 
+    print(len(team)) 
+    team = tuple(sorted(team)) 
+    print(team) 
+    if "danilov" in team: 
+        print("Данилов есть в списке") 
+    else: 
+        print("Данилова нет в списке") 
+ 
+ 
+if name == "__main__": 
+   
+    spisok_stud()
